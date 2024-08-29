@@ -1,0 +1,29 @@
+.book-carousel {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.book-carousel__wrapper {
+	display: flex;
+	overflow-x: auto;
+	scroll-behavior: smooth;
+}
+
+.book-carousel__item {
+	flex: 0 0 auto;
+	margin: 10px;
+	width: 150px;
+}
+
+.book-carousel__image {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.book-carousel__title {
+	text-align: center;
+	margin-top: 10px;
+	font-size: 16px;
+}
