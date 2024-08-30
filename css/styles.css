@@ -1,3 +1,11 @@
+:root {
+	--book-carousel-nav-bg: rgba(0, 0, 0, 0.5);
+	--book-carousel-title-font-size: 16px;
+	--book-carousel-title-color: #333;
+	--book-carousel-item-margin: 10px;
+	--book-carousel-transform-scale: 1.05;
+}
+
 .book-carousel {
 	position: relative;
 	width: 100%;
@@ -8,26 +16,27 @@
 	display: flex;
 	overflow: hidden;
 	scroll-behavior: smooth;
-	cursor: grab; /* Adiciona um cursor de "mão" */
+	cursor: grab;
 }
 
-.book-carousel__wrapper.is-dragging {
-	cursor: grabbing; /* Muda o cursor durante o arraste */
+.book-carousel__wrapper--dragging {
+	cursor: grabbing;
 }
 
 .book-carousel__item {
 	flex: 0 0 auto;
 	width: 200px;
-	margin: 10px;
+	margin: var(--book-carousel-item-margin);
 	transition: transform 0.3s ease;
 }
 
 .book-carousel__item:hover {
-	transform: scale(1.05);
+	transform: scale(var(--book-carousel-transform-scale));
 }
 
 .book-carousel__link {
-	color: #333;
+	color: var(--book-carousel-title-color);
+	text-decoration: none; /* Se aplicável, dependendo do design */
 }
 
 .book-carousel__image {
@@ -39,7 +48,7 @@
 .book-carousel__title {
 	text-align: center;
 	margin-top: 10px;
-	font-size: 16px;
+	font-size: var(--book-carousel-title-font-size);
 	font-weight: bold;
 }
 
@@ -47,8 +56,8 @@
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	background-color: rgba(0, 0, 0, 0.5);
-	color: white;
+	background-color: var(--book-carousel-nav-bg);
+	color: #fff;
 	border: none;
 	padding: 10px;
 	cursor: pointer;
