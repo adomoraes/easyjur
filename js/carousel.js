@@ -2,6 +2,7 @@ $(document).ready(function () {
 	const $carouselWrapper = $(".book-carousel__wrapper")
 	const itemWidth = $(".book-carousel__item").outerWidth(true)
 
+	// Navegação por setas
 	$(".book-carousel__nav--next").on("click", function () {
 		$carouselWrapper.animate(
 			{
@@ -20,9 +21,17 @@ $(document).ready(function () {
 		)
 	})
 
+	// Evento de clique nos links para abrir o modal
 	$(".book-carousel__link").on("click", function (event) {
 		event.preventDefault()
-		const bookDetailUrl = $(this).attr("href")
-		window.location.href = bookDetailUrl
+		const title = $(this).data("title")
+		const image = $(this).data("image")
+
+		// Atualiza o conteúdo do modal
+		$("#bookDetailModalLabel").text(title)
+		$("#bookDetailModal .modal-body img").attr("src", image).attr("alt", title)
+
+		// Abre o modal
+		$("#bookDetailModal").modal("show")
 	})
 })
