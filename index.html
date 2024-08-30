@@ -3,44 +3,23 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Carrossel de Livros</title>
-		<link rel="stylesheet" href="css/styles.css" />
+		<title>Carrossel de Livros Harry Potter com Modal</title>
+		<link rel="stylesheet" href="./css/styles.css" />
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-		<script src="js/carousel.js"></script>
+		<script src="./js/carousel.js"></script>
 	</head>
-	<body>
-		<div class="container">
-			<div class="book-carousel">
-				<button class="book-carousel__nav book-carousel__nav--prev">
-					&lt;
-				</button>
-				<div class="book-carousel__wrapper">
-					<div class="book-carousel__item">
-						<a
-							href="book-detail.html"
-							class="book-carousel__link"
-							data-title="Book 1"
-							data-image="assets/images/book1.jpg">
-							<img
-								src="assets/images/book1.jpg"
-								alt="Book 1"
-								class="book-carousel__image" />
-							<div class="book-carousel__title">Book 1</div>
-						</a>
-					</div>
-					<!-- Adicione mais itens conforme necessário -->
-				</div>
-				<button class="book-carousel__nav book-carousel__nav--next">
-					&gt;
-				</button>
-			</div>
+	<body class="bg-light">
+		<div class="book-carousel">
+			<button class="book-carousel__nav book-carousel__nav--prev">&lt;</button>
+			<div class="book-carousel__wrapper"></div>
+			<button class="book-carousel__nav book-carousel__nav--next">&gt;</button>
 		</div>
 
-		<!-- Modal para exibir os detalhes do livro -->
+		<!-- Modal para exibir os detalhes dos livros -->
 		<div
 			class="modal fade"
 			id="bookDetailModal"
@@ -61,7 +40,7 @@
 						</button>
 					</div>
 					<div class="modal-body">
-						<img src="" alt="Book Image" class="img-fluid" />
+						<!-- Detalhes do livro serão carregados aqui -->
 					</div>
 				</div>
 			</div>
