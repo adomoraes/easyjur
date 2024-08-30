@@ -1,3 +1,11 @@
+/* $grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+); */
 .book-carousel {
 	position: relative;
 	width: 100%;
@@ -6,7 +14,7 @@
 
 .book-carousel__wrapper {
 	display: flex;
-	overflow-x: auto;
+	overflow-x: hidden;
 	scroll-behavior: smooth;
 }
 
@@ -26,4 +34,28 @@
 	text-align: center;
 	margin-top: 10px;
 	font-size: 16px;
+}
+
+.book-carousel__nav {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.book-carousel__nav--prev {
+	left: 10px;
+}
+
+.book-carousel__nav--next {
+	right: 10px;
+}
+
+.book-carousel__nav:focus {
+	outline: none;
 }
