@@ -5,7 +5,12 @@
 	--book-carousel-item-margin: 10px;
 	--book-carousel-transform-scale: 1.05;
 }
-
+.book-carousel__container {
+	display: flex;
+	justify-content: center; /* Alinha horizontalmente ao centro */
+	align-items: center; /* Alinha verticalmente ao centro */
+	height: 100vh; /* Garante que o contêiner ocupe a altura total da tela */
+}
 .book-carousel {
 	position: relative;
 	width: 100%;

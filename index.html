@@ -13,10 +13,16 @@
 		<script src="./js/carousel.js"></script>
 	</head>
 	<body class="bg-light">
-		<div class="book-carousel">
-			<button class="book-carousel__nav book-carousel__nav--prev">&lt;</button>
-			<div class="book-carousel__wrapper"></div>
-			<button class="book-carousel__nav book-carousel__nav--next">&gt;</button>
+		<div class="book-carousel__container">
+			<div class="book-carousel">
+				<button class="book-carousel__nav book-carousel__nav--prev">
+					&lt;
+				</button>
+				<div class="book-carousel__wrapper"></div>
+				<button class="book-carousel__nav book-carousel__nav--next">
+					&gt;
+				</button>
+			</div>
 		</div>
 
 		<!-- Modal para exibir os detalhes dos livros -->
@@ -27,7 +33,7 @@
 			role="dialog"
 			aria-labelledby="bookDetailModalLabel"
 			aria-hidden="true">
-			<div class="modal-dialog" role="document">
+			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
 						<h5 class="modal-title" id="bookDetailModalLabel"></h5>
