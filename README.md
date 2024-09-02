@@ -5,7 +5,7 @@
 ### 1. Clonar repositório
 
 ```sh
-git clone
+git clone git@github.com:adomoraes/easyjur.git
 ```
 
 ### 2. Trocar para a branch da task
