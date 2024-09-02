@@ -1,0 +1,35 @@
+{
+	"name": "easyjur",
+	"version": "1.0.0",
+	"description": "Bem-vindo ao teste de habilidades para Desenvolvedor de Sistemas Front-End na EasyJur. Este teste avalia suas competências técnicas e resolução de problemas, visando adequação ao projeto.",
+	"main": "isbnSpec.js",
+	"type": "module",
+	"dependencies": {
+		"blurhash": "^2.0.5",
+		"ckeditor5": "^43.0.0",
+		"color-convert": "^2.0.1",
+		"color-name": "^1.1.4",
+		"color-parse": "^1.4.2",
+		"esbuild": "^0.21.5",
+		"lodash-es": "^4.17.21",
+		"marked": "^4.0.12",
+		"nanoid": "^3.3.7",
+		"picocolors": "^1.0.1",
+		"postcss": "^8.4.44",
+		"rollup": "^4.21.2",
+		"source-map-js": "^1.2.0",
+		"turndown": "^7.2.0",
+		"turndown-plugin-gfm": "^1.0.2",
+		"vanilla-colorful": "^0.7.2",
+		"vite": "^5.4.2"
+	},
+	"devDependencies": {
+		"jasmine": "^5.2.0"
+	},
+	"scripts": {
+		"test": "jasmine"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}
