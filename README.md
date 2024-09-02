@@ -1,2 +1,31 @@
-# easyjur
-Bem-vindo ao teste de habilidades para Desenvolvedor de Sistemas Front-End na EasyJur. Este teste avalia suas competências técnicas e resolução de problemas, visando adequação ao projeto.
+# CKEditor 5 Blockquote
+
+## Instruções de configuração
+
+### 1. Clonar repositório
+
+```sh
+git clone
+```
+
+### 2. Trocar para a branch da task
+
+```sh
+git checkout easyjur/task-02
+```
+
+### 3. Instalar dependências
+
+Para começar, instale os pacotes npm necessários:
+
+```sh
+npm install
+```
+
+### 4. Inicie o projeto
+
+Execute o seguinte comando para iniciar o projeto:
+
+```sh
+npm run start
+```
